@@ -13,3 +13,7 @@ go
 go migrate  
 sqlc  
 node  
+ttf-jetbrains-mono  
+ttf-jetbrains-mono-nerd  
+noto-fonts-emoji  
+sober  
