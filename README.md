@@ -9,3 +9,7 @@ spotify
 Thunar
 VirtualBox + GuestAdditions
 vlc
+go
+go migrate
+sqlc
+node
