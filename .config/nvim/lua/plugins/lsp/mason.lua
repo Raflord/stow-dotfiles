@@ -42,6 +42,7 @@ return {
 				"emmet_language_server",
 				"marksman",
 				"jdtls",
+				"pylsp",
 				-- "clangd",
 				-- "omnisharp",
 			},

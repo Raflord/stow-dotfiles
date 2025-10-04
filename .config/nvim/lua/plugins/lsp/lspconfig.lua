@@ -15,26 +15,6 @@ return {
 		},
 	},
 	config = function()
-		-- NOTE: using format on save with comform-nvim
-
-		-- Format on save (using "conform.nvim" for formating on save)
-		-- vim.api.nvim_create_autocmd("LspAttach", {
-		-- 	callback = function(args)
-		-- 		local c = vim.lsp.get_client_by_id(args.data.client_id)
-		-- 		if not c then
-		-- 			return
-		-- 		end
-		--
-		-- 		-- Format the current buffer on save
-		-- 		vim.api.nvim_create_autocmd("BufWritePre", {
-		-- 			buffer = args.buf,
-		-- 			callback = function()
-		-- 				vim.lsp.buf.format({ bufnr = args.buf, id = c.id })
-		-- 			end,
-		-- 		})
-		-- 	end,
-		-- })
-
 		-- NOTE: LSP Keybinds
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -103,13 +83,11 @@ return {
 			update_in_insert = false, -- Keep diagnostics active in insert mode
 		})
 		-- Setup servers
-		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		-- Config lsp servers here
-		-- lua_ls
-		lspconfig.lua_ls.setup({
+		-- Config lsp servers
+		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
 			settings = {
 				Lua = {
@@ -126,14 +104,8 @@ return {
 			},
 		})
 
-		-- ts_ls (replaces tsserver)
-		lspconfig.ts_ls.setup({
+		vim.lsp.config("ts_ls", {
 			capabilities = capabilities,
-			root_dir = function(fname)
-				local util = lspconfig.util
-				return not util.root_pattern("deno.json", "deno.jsonc")(fname)
-					and util.root_pattern("tsconfig.json", "package.json", "jsconfig.json", ".git")(fname)
-			end,
 			single_file_support = false,
 			init_options = {
 				preferences = {
@@ -143,7 +115,7 @@ return {
 			},
 		})
 
-		lspconfig.gopls.setup({
+		vim.lsp.config("gopls", {
 			capabilities = capabilities,
 			settings = {
 				gopls = {
@@ -155,9 +127,13 @@ return {
 				},
 			},
 		})
-		lspconfig.html.setup({ capabilities = capabilities })
-		lspconfig.cssls.setup({ capabilities = capabilities })
-		lspconfig.jdtls.setup({ capabilities = capabilities })
-		lspconfig.tailwindcss.setup({ capabilities = capabilities })
+
+		vim.lsp.config("html", { capabilities = capabilities })
+		vim.lsp.config("cssls", { capabilities = capabilities })
+		vim.lsp.config("jdtls", { capabilities = capabilities })
+		vim.lsp.config("tailwindcss", { capabilities = capabilities })
+		vim.lsp.config("pylsp", { capabilities = capabilities })
+
+		vim.lsp.enable({ "lua_ls", "ts_ls", "gopls", "html", "cssls", "jdtls", "tailwindcss", "pylsp" })
 	end,
 }

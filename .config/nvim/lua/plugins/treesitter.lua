@@ -28,6 +28,7 @@ return {
 					"java",
 					"c_sharp",
 					"cpp",
+					"python",
 				},
 				auto_install = true,
 				highlight = {
