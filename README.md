@@ -1,6 +1,6 @@
 # stow-dotfiles
 
-Discord  
+Discord ok  
 elecwhat  
 chrome ok  
 lazygit ok  

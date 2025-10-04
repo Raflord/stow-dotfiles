@@ -14,11 +14,6 @@ return {
 				cursor_line = true,
 			},
 
-			-- Disable the colored cursor
-			-- disable = {
-			-- 	colored_cursor = true,
-			-- },
-
 			-- Give comments style such as bold, italic, underline etc.
 			styles = { comments = { italic = true } },
 
