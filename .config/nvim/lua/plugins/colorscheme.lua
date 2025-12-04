@@ -45,6 +45,7 @@ return {
 				["@tag.builtin"] = { fg = "#F07178" },
 				["@punctuation.bracket"] = { fg = "#DA70D6" },
 				["@markup.link.label.html"] = { fg = "#EEFFFF" },
+				["@markup.heading"] = { fg = "#EEFFFF" },
 
 				-- rainbow-delimters colors
 				RainbowDelimiterYellow = {

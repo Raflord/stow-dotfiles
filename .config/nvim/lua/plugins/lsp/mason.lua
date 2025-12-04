@@ -43,6 +43,7 @@ return {
 				"marksman",
 				"jdtls",
 				"pylsp",
+				"superhtml",
 				-- "clangd",
 				-- "omnisharp",
 			},

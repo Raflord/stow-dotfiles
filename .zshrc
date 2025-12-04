@@ -117,3 +117,10 @@ export PATH="~/.config/composer/vendor/bin:$PATH"
 export PATH="/home/rafael/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/rafael/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 export PATH=~/bin:$PATH
+
+# bun completions
+[ -s "/home/rafael/.bun/_bun" ] && source "/home/rafael/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
