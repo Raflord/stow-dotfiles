@@ -135,6 +135,16 @@ return {
 		vim.lsp.config("pylsp", { capabilities = capabilities })
 		vim.lsp.config("superhtml", { capabilities = capabilities })
 
-		vim.lsp.enable({ "lua_ls", "ts_ls", "gopls", "html", "cssls", "jdtls", "tailwindcss", "pylsp", "superhtml" })
+		vim.lsp.enable({
+			"lua_ls",
+			"ts_ls",
+			"gopls",
+			"html",
+			"cssls",
+			"jdtls",
+			"tailwindcss",
+			"pylsp",
+			"superhtml, biome",
+		})
 	end,
 }

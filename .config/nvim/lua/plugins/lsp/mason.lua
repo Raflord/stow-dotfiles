@@ -56,6 +56,7 @@ return {
 				"stylua",
 				"clangd",
 				"xmlformatter",
+				"biome",
 			},
 		})
 	end,

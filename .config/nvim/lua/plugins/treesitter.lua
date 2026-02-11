@@ -3,6 +3,7 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()
+			require("nvim-treesitter.install").prefer_git = true
 			require("nvim-treesitter.configs").setup({
 				modules = {},
 				sync_install = true,
@@ -29,6 +30,8 @@ return {
 					"c_sharp",
 					"cpp",
 					"python",
+					"json",
+					"jsonc",
 				},
 				auto_install = true,
 				highlight = {
@@ -50,7 +53,7 @@ return {
 	{
 		"windwp/nvim-ts-autotag",
 		enabled = true,
-		ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact", "java" },
+		ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact" },
 		config = function()
 			-- Independent nvim-ts-autotag setup
 			require("nvim-ts-autotag").setup({

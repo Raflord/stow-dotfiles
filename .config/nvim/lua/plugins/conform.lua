@@ -5,15 +5,15 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				xml = { "xmlformatter" },
-				javascript = { "prettierd", "prettier" },
-				typescript = { "prettierd", "prettier" },
-				javascriptreact = { "prettierd", "prettier" },
-				typescriptreact = { "prettierd", "prettier" },
-				json = { "prettierd", "prettier" },
-				css = { "prettierd", "prettier" },
+				javascript = { "prettierd", "prettier", "biome" },
+				typescript = { "prettierd", "prettier", "biome" },
+				javascriptreact = { "prettierd", "prettier", "biome" },
+				typescriptreact = { "prettierd", "prettier", "biome" },
+				json = { "prettierd", "prettier", "biome" },
+				css = { "prettierd", "prettier", "biome" },
 				html = { "superhtml" },
-				yaml = { "prettierd", "prettier" },
-				markdown = { "prettierd", "prettier" },
+				yaml = { "prettierd", "prettier", "biome" },
+				markdown = { "prettierd", "prettier", "biome" },
 			},
 			format_on_save = {
 				-- These options will be passed to conform.format()
