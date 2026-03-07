@@ -12,7 +12,7 @@ return {
 				json = { "prettierd", "prettier", "biome" },
 				css = { "prettierd", "prettier", "biome" },
 				html = { "superhtml" },
-				yaml = { "prettierd", "prettier", "biome" },
+				yaml = { "yamlfmt" },
 				markdown = { "prettierd", "prettier", "biome" },
 			},
 			format_on_save = {

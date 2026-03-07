@@ -15,6 +15,11 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+-- Clear last highlighted word
+vim.keymap.set("n", "<leader>h", function()
+	vim.cmd("noh")
+end, { desc = "clear last highlighted word" })
+
 -- Paste without replacing clipboard content
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
