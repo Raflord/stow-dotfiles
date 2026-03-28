@@ -41,11 +41,9 @@ return {
 				"emmet_ls",
 				"emmet_language_server",
 				"marksman",
-				"jdtls",
-				"pylsp",
 				"superhtml",
-				-- "clangd",
-				-- "omnisharp",
+				"ruff",
+				"basedpyright",
 			},
 		})
 		-- formatters
@@ -54,9 +52,9 @@ return {
 				"prettierd",
 				"prettier",
 				"stylua",
-				"clangd",
 				"xmlformatter",
 				"biome",
+				"ruff",
 			},
 		})
 	end,

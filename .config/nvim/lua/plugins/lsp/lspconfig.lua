@@ -130,9 +130,9 @@ return {
 
 		vim.lsp.config("html", { capabilities = capabilities })
 		vim.lsp.config("cssls", { capabilities = capabilities })
-		vim.lsp.config("jdtls", { capabilities = capabilities })
 		vim.lsp.config("tailwindcss", { capabilities = capabilities })
-		vim.lsp.config("pylsp", { capabilities = capabilities })
+		vim.lsp.config("ruff", { capabilities = capabilities })
+		vim.lsp.config("basedpyright", { capabilities = capabilities })
 		vim.lsp.config("superhtml", { capabilities = capabilities })
 
 		vim.lsp.enable({
@@ -141,10 +141,11 @@ return {
 			"gopls",
 			"html",
 			"cssls",
-			"jdtls",
 			"tailwindcss",
-			"pylsp",
-			"superhtml, biome",
+			"ruff",
+			"basedpyright",
+			"superhtml",
+			"biome",
 		})
 	end,
 }
