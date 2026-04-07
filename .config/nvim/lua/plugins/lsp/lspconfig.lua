@@ -132,8 +132,9 @@ return {
 		vim.lsp.config("cssls", { capabilities = capabilities })
 		vim.lsp.config("tailwindcss", { capabilities = capabilities })
 		vim.lsp.config("ruff", { capabilities = capabilities })
-		vim.lsp.config("basedpyright", { capabilities = capabilities })
+		vim.lsp.config("ty", { capabilities = capabilities })
 		vim.lsp.config("superhtml", { capabilities = capabilities })
+		vim.lsp.config("prismals", { capabilities = capabilities })
 
 		vim.lsp.enable({
 			"lua_ls",
@@ -143,9 +144,11 @@ return {
 			"cssls",
 			"tailwindcss",
 			"ruff",
-			"basedpyright",
+			"ty",
+			-- "basedpyright",
 			"superhtml",
 			"biome",
+			"prismals",
 		})
 	end,
 }

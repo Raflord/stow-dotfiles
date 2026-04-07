@@ -29,6 +29,7 @@ return {
 					"python",
 					"json",
 					"jsonc",
+					"prisma",
 				},
 				auto_install = true,
 				highlight = {

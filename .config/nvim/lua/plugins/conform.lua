@@ -15,6 +15,7 @@ return {
 				yaml = { "yamlfmt" },
 				markdown = { "biome-check", "prettierd", "prettier" },
 				python = { "ruff_organize_imports", "ruff_fix", "ruff_format" },
+				prisma = { "prismals" },
 			},
 			format_on_save = {
 				-- These options will be passed to conform.format()
