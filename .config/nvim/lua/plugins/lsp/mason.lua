@@ -43,8 +43,8 @@ return {
 				"marksman",
 				"superhtml",
 				"ruff",
-				"ty",
-				-- "basedpyright",
+				-- "ty",
+				"basedpyright",
 			},
 		})
 		-- formatters

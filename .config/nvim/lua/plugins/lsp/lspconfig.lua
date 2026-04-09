@@ -87,6 +87,10 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Config lsp servers
+		vim.keymap.set("n", "<leader>i", function()
+			vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+		end, { desc = "Toggle Inlay Hints" })
+
 		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
 			settings = {
@@ -132,6 +136,7 @@ return {
 		vim.lsp.config("cssls", { capabilities = capabilities })
 		vim.lsp.config("tailwindcss", { capabilities = capabilities })
 		vim.lsp.config("ruff", { capabilities = capabilities })
+		vim.lsp.config("basedpyright", { capabilities = capabilities })
 		vim.lsp.config("ty", { capabilities = capabilities })
 		vim.lsp.config("superhtml", { capabilities = capabilities })
 		vim.lsp.config("prismals", { capabilities = capabilities })
@@ -145,7 +150,7 @@ return {
 			"tailwindcss",
 			"ruff",
 			"ty",
-			-- "basedpyright",
+			"basedpyright",
 			"superhtml",
 			"biome",
 			"prismals",

@@ -10,6 +10,7 @@ return {
 				javascriptreact = { "biome-check", "prettierd", "prettier" },
 				typescriptreact = { "biome-check", "prettierd", "prettier" },
 				json = { "biome-check", "prettierd", "prettier" },
+				jsonc = { "biome-check", "prettierd", "prettier" },
 				css = { "biome-check", "prettierd", "prettier" },
 				html = { "superhtml" },
 				yaml = { "yamlfmt" },
