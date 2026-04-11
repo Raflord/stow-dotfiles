@@ -11,16 +11,18 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
+vim.opt.confirm = true
 
 vim.opt.incsearch = true
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.iskeyword:append("-")
 
 vim.opt.termguicolors = true
 vim.opt.background = "dark"

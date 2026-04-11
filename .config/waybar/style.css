@@ -48,37 +48,37 @@ tooltip label {
 }
 
 #language {
-  border-bottom: 2px solid @pink;
-}
+  border-bottom: 2px solid @pink,
+};
 
 #custom-power {
-  border-bottom: 2px solid @grey;
+  border-bottom: 2px solid @grey,
   padding-right: 12px;
-}
+};
 
 #clock {
-  border-bottom: 2px solid @red;
-}
+  border-bottom: 2px solid @red,
+};
 
 #temperature {
-  border-bottom: 2px solid @orange;
-}
+  border-bottom: 2px solid @orange,
+};
 
 #cpu {
-  border-bottom: 2px solid @green;
-}
+  border-bottom: 2px solid @green,
+};
 
 #memory {
-  border-bottom: 2px solid @purple;
-}
+  border-bottom: 2px solid @purple,
+};
 
 #pulseaudio {
-  border-bottom: 2px solid @yellow;
-}
+  border-bottom: 2px solid @yellow,
+};
 
 #power-profiles-daemon {
-  border-bottom: 2px solid @blue;
-}
+  border-bottom: 2px solid @blue,
+};
 
 @keyframes blink {
   to {

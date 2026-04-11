@@ -1,8 +1,8 @@
 return {
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
 	lazy = false,
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
+		"mason-org/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		"hrsh7th/cmp-nvim-lsp",
 		"neovim/nvim-lspconfig",

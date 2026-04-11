@@ -5,9 +5,7 @@ return {
 		"hrsh7th/nvim-cmp",
 	},
 	config = function()
-		local autopairs = require("nvim-autopairs")
-
-		autopairs.setup({
+		require("nvim-autopairs").setup({
 			check_ts = true,
 			ts_config = {
 				lua = { "string" },
