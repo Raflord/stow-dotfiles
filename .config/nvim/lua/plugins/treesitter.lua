@@ -25,7 +25,6 @@ return {
 				"typescript",
 				"python",
 				"json",
-				"jsonc",
 				"prisma",
 			}
 			local alreadyInstalled = require("nvim-treesitter.config").get_installed()
@@ -49,13 +48,13 @@ return {
 	{
 		"windwp/nvim-ts-autotag",
 		enabled = true,
-		ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact" },
 		config = function()
 			require("nvim-ts-autotag").setup({
 				opts = {
 					enable_close = true, -- Auto-close tags
 					enable_rename = true, -- Auto-rename pairs
 					enable_close_on_slash = false, -- Disable auto-close on trailing `</`
+					ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact" },
 				},
 				per_filetype = {
 					["html"] = {

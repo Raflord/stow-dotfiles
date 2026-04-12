@@ -83,8 +83,7 @@ return {
 			update_in_insert = false, -- Keep diagnostics active in insert mode
 		})
 		-- Setup servers
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 		-- Config lsp servers
 		vim.keymap.set("n", "<leader>i", function()

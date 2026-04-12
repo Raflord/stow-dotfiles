@@ -6,5 +6,6 @@ return {
 		require("mini.comment").setup()
 		-- Surround (add/delete/change surrounding characters)
 		require("mini.surround").setup()
+		require("mini.pairs")
 	end,
 }
