@@ -1,7 +1,7 @@
 return {
 	"roobert/tailwindcss-colorizer-cmp.nvim",
-	priority = 10,
 	lazy = true,
+	ft = "javascript, typescript, javascriptreact, typescriptreact",
 	{
 		"NvChad/nvim-colorizer.lua",
 		dependencies = { "nvim-treesitter/nvim-treesitter" },

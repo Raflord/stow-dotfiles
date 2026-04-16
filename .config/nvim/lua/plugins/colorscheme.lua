@@ -58,4 +58,5 @@ return {
 	{ "thesimonho/kanagawa-paper.nvim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "vague-theme/vague.nvim" },
+	{ "rose-pine/neovim", name = "rose-pine" },
 }
