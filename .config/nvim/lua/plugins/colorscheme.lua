@@ -57,6 +57,23 @@ return {
 	},
 	{ "thesimonho/kanagawa-paper.nvim" },
 	{ "rebelot/kanagawa.nvim" },
-	{ "vague-theme/vague.nvim" },
+	{
+		"vague-theme/vague.nvim",
+		config = function()
+			require("vague").setup({
+				on_highlights = function(hl, colors)
+					local custom_highlights = {
+						["@markup.link.label.html"] = { fg = colors.fg, bold = false },
+						["@markup.link.label.tsx"] = { fg = colors.fg, bold = false },
+						["@markup.heading"] = { fg = colors.fg, bold = false },
+					}
+
+					for group, styles in pairs(custom_highlights) do
+						hl[group] = vim.tbl_extend("force", hl[group] or {}, styles)
+					end
+				end,
+			})
+		end,
+	},
 	{ "rose-pine/neovim", name = "rose-pine" },
 }

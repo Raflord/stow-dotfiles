@@ -1,17 +1,15 @@
-@import "themes/main.css";
-
 * {
   font-family:
     Metropolis Medium,
     "JetBrainsMono Nerd Font";
-  font-size: 11px;
+  font-size: 14px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 24px;
   padding: 0px 5px 0px 5px;
 }
 
 window#waybar {
-  background-color: @bg;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 window#waybar.empty #window {
@@ -20,21 +18,21 @@ window#waybar.empty #window {
 
 #window {
   background-color: transparent;
-  color: @fg_soft;
+  color: rgba(255, 255, 255, 0.6);
   margin: 0px 2px 0px 2px;
 }
 
 tooltip * {
-  background-color: @tooltip_bg;
+  background-color: rgb(0, 0, 0);
   padding: 2px 3px 2px 3px;
   border-radius: 6px;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
 }
 
 #workspaces button {
   background: transparent;
   border-radius: 0px;
-  color: @workspace_inactive;
+  color: rgba(255, 255, 255, 0.4);
   padding: 0px;
   margin: 0px;
 }
@@ -42,119 +40,119 @@ tooltip * {
 #workspaces button.active {
   background: transparent;
   border-radius: 0px;
-  color: @fg_alt;
+  color: rgba(255, 255, 255, 1);
   padding: 0px;
   margin: 0px;
 }
 
 #workspaces button.focused {
-  background-color: @workspace_active;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #workspaces button.urgent {
-  color: @urgent;
+  color: rgba(0, 153, 255, 1);
 }
 
 #custom-logo {
-  background-color: @bg_alt;
+  background-color: transparent;
   font-family: "JetBrainsMono Nerd Font Propo";
-  font-size: 12px;
-  color: @fg;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 10px 0px 10px;
 }
 
 #custom-expand {
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 4px 0px 4px;
 }
 
 #cpu {
   border-radius: 20px;
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 8px 0px 0px;
   margin: 0px 0px 0px 2px;
 }
 
 #memory {
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 5px;
 }
 
 #disk {
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 0px;
 }
 
 #temperature {
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 0px;
 }
 
 #battery {
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 0px 0px 5px;
   margin: 0px 0px 0px 4px;
 }
 
 #battery.charging {
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 10px 0px 5px;
 }
 
 #battery.plugged {
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 10px 0px 5px;
 }
 
 #language {
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 5px;
   margin: 0px 6px 0px 0px;
 }
 
 #backlight {
   border-radius: 0px 0px 0px 10px;
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 10px;
   margin: 0px 0px 0px 4px;
 }
 
 #pulseaudio {
-  background-color: @bg_alt;
-  color: @fg;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 5px 0px 5px;
 }
 
 #clock {
   background-color: transparent;
-  color: @fg;
+  color: rgba(255, 255, 255, 1);
   padding: 0px 8px 0px 8px;
   margin: 0px 0px 0px 5px;
 }
 
 #workspaces button:hover {
-  background: @workspace_hover;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #custom-logo:hover,
 #clock:hover,
 #custom-expand:hover,
 #language:hover {
-  background: @hover;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #backlight:hover,
 #pulseaudio:hover,
 #network:hover {
-  color: @fg_soft;
+  color: rgba(255, 255, 255, 0.6);
 }

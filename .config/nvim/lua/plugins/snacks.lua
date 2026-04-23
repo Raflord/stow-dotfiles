@@ -8,6 +8,6 @@ return {
 		notifier = { enabled = true },
 		quickfile = { enabled = true },
 		scope = { enabled = true },
-		image = { enabled = true },
+		image = { enabled = false },
 	},
 }
